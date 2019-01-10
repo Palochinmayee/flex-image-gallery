@@ -1,0 +1,48 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+body {
+    background: #f5f5f5;
+}
+
+.gallery-container {    
+    background: gainsboro;
+    max-width: 100%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.gallery-container__block {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    background: beige;
+    flex: 1 0 auto;
+}
+.gallery-container__block-image {
+    padding: 10px;
+    height: 80%;
+}
+.gallery-container__block-image img {
+    width: 100%;
+    height: 100%;
+}
+.gallery-container__block-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+@media only screen and (min-width: 1025px) {
+    .gallery-container {
+        position: relative;
+        width: 60%;
+        left: 20%;
+    }    
+}
